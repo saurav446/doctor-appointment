@@ -1,0 +1,92 @@
+.sidebar{
+    background-image: linear-gradient(40deg, #19d3ae,#0fcfec);
+    position: fixed;
+}
+.sidebar li{
+    margin-bottom: 2em;
+}
+.sidebar li:hover span{
+    display: inline-block;
+    transform: translate(5px); 
+}
+.sidebar svg{
+    margin-right: 5px;
+}
+
+.sidebar a{
+    text-decoration: none !important;
+}
+
+.header__top{
+    height: 3rem;
+    width: auto; 
+    display: inline-block;  
+    background-image: linear-gradient( #19d3ae,#0fcfec); 
+}
+
+.menu{
+    display:none !important;
+  }
+  
+  @media all and (max-width: 1145px){
+    .sidebar {
+        position: fixed;
+        transform: translateX(-30rem);
+        width: 20rem;
+        height: 100%;
+        background-image: linear-gradient(40deg, #19d3ae,#0fcfec);
+        /* background-color:white; */
+        transition: .5s;
+        margin-top: 48px;
+        color: black;
+        border-top: .5px solid white;
+        border-top-right-radius: 5px;
+        z-index: 1;
+        padding-top: 1rem !important;
+        padding-bottom: 5rem !important;
+    }
+ .menu{
+        display:block !important;
+        margin-top: 16px;
+        margin-left: 16px;
+        cursor: pointer;
+        position: absolute;
+        top: 0%;
+        left: 5%;
+        z-index: 999; 
+        color: white;
+    }
+    .open{
+        transform: translateX(0);
+    }
+  }
+
+  
+  @media all and (max-width: 767px){
+    .appointment{
+        margin-top: 16rem !important; 
+    }
+    .img-fluid {
+        width: 100% !important;
+        height: auto;
+    }
+    .react-calendar {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    .offset-md-1{
+        text-align: center;
+    }
+  }
+  
+  @media all and (max-width: 600px){
+    .appointment{
+        margin-top: 13rem !important; 
+    }
+  }
+
+  @media all and (max-width: 500px){
+    .appointment{
+        margin-top: 10rem !important; 
+    }
+  }

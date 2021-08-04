@@ -3,6 +3,7 @@ import Footer from '../../Shared/Footer/Footer';
 import Navbar from '../../Shared/Navbar/Navbar';
 import AppointmentBook from '../AppointmentBook/AppointmentBook';
 import AppointmentHeader from '../AppointmentHeader/AppointmentHeader';
+import './Appointment.css'
 
 const Appointment = () => {
     const [selectedDate,setSelecteDate] = useState(new Date())

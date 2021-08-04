@@ -1,37 +1,30 @@
 import React from 'react';
+import { Navbar,Container,Nav ,NavDropdown} from 'react-bootstrap';
 
-const Navbar = () => {
+const navbar = () => {
     return (
-        <nav className="navbar navbar-expand-lg navbar-light">
-
-            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span className="navbar-toggler-icon"></span>
-            </button>
-
-            <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul className="navbar-nav ml-auto">
-                    <li className="nav-item active">
-                        <a className="nav-link mr-5" href="#">Home <span className="sr-only">(current)</span></a>
-                    </li>
-                    <li className="nav-item">
-                        <a className="nav-link mr-5" href="#">About</a>
-                    </li>
-                    <li className="nav-item">
-                        <a className="nav-link mr-5" href="#">Dental Services</a>
-                    </li>
-                    <li className="nav-item">
-                        <a className="nav-link mr-5 text-white" href="#">Reviews</a>
-                    </li>
-                    <li className="nav-item">
-                        <a className="nav-link mr-5 text-white" href="#">Blogs</a>
-                    </li>
-                    <li className="nav-item">
-                        <a className="nav-link mr-5 text-white" href="#">Contact Us</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+        <div > 
+       <Navbar   expand="lg">
+        <Container>
+            <Navbar.Brand href="#home">Doctor Protal</Navbar.Brand>
+            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar.Collapse id="basic-navbar-nav"  className="justify-content-end">
+            <Nav >
+                <Nav.Link href="#home">Home</Nav.Link>
+                <Nav.Link href="#link">Dashboard</Nav.Link> 
+                <Nav.Link href="#link">Admin</Nav.Link> 
+                <Nav.Link href="#link">About</Nav.Link> 
+                <Nav.Link href="#link">Contact</Nav.Link> 
+            </Nav>
+            </Navbar.Collapse>
+        </Container>
+        </Navbar>
+      </div>
     );
 };
 
-export default Navbar;
+export default navbar;
+
+
+
+

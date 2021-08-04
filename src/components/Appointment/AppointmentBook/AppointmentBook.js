@@ -2,6 +2,7 @@ import React from 'react';
 import BookingCard from '../BookingCard/BookingCard'; 
 
 import { Col,Button,Row, Container  } from 'react-bootstrap';
+import '../../Deshboard/Sidebar/Sidebar.css'
 const bookingDate  = [
     {
         id: 1,
@@ -42,8 +43,8 @@ const AppointmentBook = ({date}) => {
         <section  >
             <Container> 
            <h2  
-           style={{color:'#1CC7C1',fontWeight:'600',margin:'3rem 0px'}}
-           className="text-center text-brand"
+           style={{color:'#1CC7C1',fontWeight:'600',margin:'4rem 0px'}}
+           className="text-center text-brand appointment"
            >AvailAble Appointment on {date.toDateString()}</h2>
            
            <div className="row"> 

@@ -60,7 +60,7 @@
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/saurav446/doctor-appointment/issues"
+    "url": "http://localhost:3000"
   },
-  "homepage": "https://github.com/saurav446/doctor-appointment#readme"
+  "homepage": "http://localhost:3000"
 }

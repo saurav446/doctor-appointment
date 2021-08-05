@@ -1,0 +1,9 @@
+ .navbar-nav {
+     color: #1CC7C1;
+     font-size: 20px;
+     margin-right: 2rem;
+     font-weight: 600;
+ }
+ .navbar-nav a{
+     text-decoration: none;
+ }

@@ -7,7 +7,9 @@ import {
 } from "react-router-dom";
 import Home from './components/Home/Home/Home';
 import Appointment from './components/Appointment/Appointment/Appointment';
-import Deshboard from './components/Deshboard/Dashboard/Deshboard'; 
+import Deshboard from './components/Deshboard/Dashboard/Deshboard';  
+import Contacts from './components/Contact/Contacts';
+import Abouts from './components/About/Abouts';
  
 
 function App() { 
@@ -22,8 +24,12 @@ function App() {
         <Route path="/appointment">
        <Appointment />
         </Route>  
-
-      
+        <Route path="/about">
+         <Abouts />
+        </Route> 
+        <Route path="/contact">
+        <Contacts />
+        </Route> 
         <Route path="/dashboard/appointment">
        <Deshboard />
         </Route> 
